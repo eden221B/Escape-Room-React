@@ -1,0 +1,31 @@
+#room3 {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/564x/b2/f7/1d/b2f71dc06b6f32183148a8c26da3d668.jpg");
+    background-size: cover; 
+    background-position: center;
+    height: 711px;
+}
+
+
+#vault {
+    width:400px;
+    position: absolute;
+    left: 200px;
+    top:150px;
+    z-index: 100;
+}
+#scroll {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left:200px;
+    top:230px;
+    z-index: 10;
+}
+#LostSymbol {
+    width: 400px;
+    position: absolute;
+    left:700px;
+    top:270px;
+}

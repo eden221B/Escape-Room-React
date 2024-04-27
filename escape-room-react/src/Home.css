@@ -1,0 +1,162 @@
+table img
+{
+    width: 40px;
+}
+table
+{
+    padding:40px;
+}
+#text
+{
+    text-align: center;
+    width:auto;
+    position: absolute;
+    left:480px;
+    font-size: 40px;
+    font-family: fantasy;
+    font-weight:900 ;
+}
+nav
+{
+    margin: 0%;
+    padding-top: 0;
+    z-index: 200;
+    position: relative;
+    background-color: rgb(236, 149, 42);
+    opacity: 60%;
+}
+body
+{
+    margin: 0%;
+    padding: 0%;
+}
+.top
+{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 1px;
+    z-index: 1;
+    background-image: url("https://i.pinimg.com/564x/80/c8/93/80c893cfc2f37c0506985e025652758c.jpg");
+    background-size: cover;
+   
+}
+
+.texttop
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:170px;
+    left: 310px;
+    z-index: 400;
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+a
+{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#lower
+{
+    font-size: 30px;
+    left: 220px;
+    font-family:fantasy;
+    font-weight: 800;
+}
+#down
+{
+    font-size: 30px;
+    width: 70px;
+    height: 40px;
+    border: 2px solid white;
+    box-shadow: 0 0 5px 2px bisque;
+    padding: 9px;
+    left:600px;
+    top: 300px;
+
+    animation :updown 3s ease-in-out infinite;
+}
+@keyframes updown
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-30px); 
+    }
+
+}
+.how
+{
+    width: 1100px;
+    height: 870px;
+    color: black;
+    position:relative;
+    top: 417px;
+    left:100px;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: 22px;
+    background-image: url("https://i.pinimg.com/564x/0b/2c/bd/0b2cbd1349e6b1f4143e9fc09ef219d2.jpg");
+    background-size: cover;
+    padding: 0;
+    
+}
+.head 
+{
+    position: relative;
+    left:60px !important ;
+    top:80px;
+    width: 1000px;
+}
+.how table
+{
+    border-spacing: 0;
+}
+.images
+{
+    padding-right: 30px;
+}
+.foot
+{
+    position: relative;
+    top: 500px;
+    width:100%;
+    height: 165px;
+    background-image: url("https://i.pinimg.com/564x/07/e0/a9/07e0a94ad25e960f26696485fe8a4ea5.jpg");
+    background-size: cover;
+    opacity: 70%;
+    z-index: 100;
+}
+.foot p
+{
+    position: relative;
+    top:50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    z-index: 500;
+}
+.foot table
+{
+    position: relative;
+    left:550px;
+    top:10px;
+    border-spacing: 20px;
+    padding: 0;
+}
+#link {
+    margin: 0;
+    padding: 0%;
+}
+

@@ -1,0 +1,118 @@
+#room2 {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/564x/8a/67/2b/8a672bdea89a8dec1ef1d0cc2945665c.jpg");
+    background-size: cover; 
+    background-position: center;
+    height: 711px;
+}
+
+
+#code{
+    width:300px;
+    position: absolute;
+    left:160px;
+    top:70px;
+    
+}
+#anotherlock {
+    width:300px;
+    position: absolute;
+    left:160px;
+    top:70px;
+    height: 578px;
+}
+#symbols {
+    width:300px;
+    position: absolute;
+    right:300px;
+    top:100px;
+}
+#right2{
+    width: 100px;
+    position: absolute;
+    right:10px;
+    top:300px;
+}
+.letters
+{
+    position: absolute;
+    top: 550px;
+    width: 80px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 2.0s ease;
+    z-index: 10;
+}
+.boxes
+{
+    position: absolute;
+    top:550px;
+    width:80px;
+}
+.letters:hover
+{
+    transform: translateY(-90px);
+}
+
+#P
+{
+    left:520px;
+}
+#box1
+{
+    left:520px;
+}
+
+#O
+{
+    left:620px;
+}
+#box2
+{
+    left:620px;
+}
+
+#H2
+{
+    left:720px;
+}
+#box3
+{
+    left:720px;
+}
+
+#R
+{
+    left:820px;
+}
+#box4
+{
+    left:820px;
+}
+
+#A1
+{
+    left:920px;
+}
+#box5
+{
+    left:920px;
+}
+
+#H1
+{
+    left:1020px;
+}
+#box6
+{
+    left:1020px;
+}
+
+#A2
+{
+    left:1120px;
+}
+#box7
+{
+    left:1120px;
+}
