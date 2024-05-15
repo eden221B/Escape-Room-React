@@ -10,7 +10,7 @@ const Room3 = () => {
   const [showRoom2, setShowRoom2] = useState(false);
   const [showRoom4, setShowRoom4] = useState(false);
   const [showgame, setshowgame] = useState(false);
-  const [timer, setTimer] = useState(600);
+  const [timer, setTimer] = useState(300);
 
   useEffect(() => {
     const countdown = setTimeout(() => {
