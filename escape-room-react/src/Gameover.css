@@ -1,0 +1,48 @@
+#over {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/564x/c2/ea/7e/c2ea7e6fe7c41d4ed56d0e3d1d9e5b05.jpg");
+    background-size: cover; 
+    background-position: center;
+    height: 711px;
+}
+#head1 , #head2
+{
+    position: absolute;
+    left:100px;
+    top:20px;
+    font-size: 50px;
+    font-family: fantasy;
+    color:white;
+    font-weight: 800;
+
+}
+#head2
+{
+    position: absolute;
+    top:540px;
+    left:0;
+    color: black;
+
+}
+#mystic
+{
+    width: 350px;
+    height: 370px;
+    position: absolute;
+    top:100px;
+    left:500px;
+    animation :updown 2s ease-in-out infinite;
+}
+@keyframes updown
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-40px); 
+    }
+
+}

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import './Room4.css';
 import Room3 from './Room3';
 import Room1 from './Room1';
+import Gameover from './Gameover';
 
 
 const Room4 = () => {
@@ -11,6 +13,22 @@ const Room4 = () => {
     const [Lock4, setLock4] = useState("locked");
     const [showRoom3, setShowRoom3] = useState(false);
     const [showRoom1, setShowRoom1] = useState(false);
+    const [showgame, setshowgame] = useState(false);
+    const [timer, setTimer] = useState(10);
+
+    useEffect(() => {
+      const countdown = setTimeout(() => {
+        if (timer === 0) {
+          setshowgame(true);
+          setShowRoom3(false);
+          setShowRoom1(false);
+        } else {
+          setTimer(timer - 1); 
+        }
+      }, 1000); 
+  
+      return () => clearTimeout(countdown);
+    }, [timer]);
   
     const tryLock1 = () => {
       const input = prompt("The mural seems to hide something\uFF02,you thought.There was a faint inscription on it, it read (1,1)");
@@ -61,15 +79,20 @@ const Room4 = () => {
     };
     
     return (
-    <div>
-        {(showRoom1 || showRoom3) ? (
-            showRoom1 ? (
-                <Room1 />
+
+      <div>
+            {(showRoom3 || showRoom1 || showgame) ? (
+                (showRoom3 || showRoom1) ? (
+                    showRoom3 ? (
+                        <Room3 />
+                    ) : (
+                        <Room1 />
+                    )
+                ) : (
+                    <Gameover />
+                )
             ) : (
-                <Room3 />
-            )
-        ) : (
-            <div id="room4" >
+              <div id="room4" >
                 <img id="left" src="/images/left.png" alt="Left" onClick={goToRoom3} />
                 <img id="square"  src="/images/lastcode.jpeg" alt="scroll" />
                 
@@ -84,11 +107,24 @@ const Room4 = () => {
 
                 <img id="sol4" className='solss' src="/images/sol4.png" alt="scroll" />
                 {Lock4 === "locked" && <img id="lock4" className='lockss' src="/images/ls4.jpeg" alt="lock4" onClick={tryLock4} />}
+
+                <div id="timer" >
+                <table id='time'>
+                  <tr>
+                    <td><img id="clock" src="/images/timer.png" /></td>
+                    <td>{timer}</td>
+                    <td>seconds</td>
+                    <td>left</td>
+                  </tr>
+                </table>
+              </div>
                 
                 <img id="right" src="/images/right.png" alt="Right" onClick={goToRoom1} />
             </div>
-        )}
-    </div>
+            )}
+        </div>
+    
+    
     );
 }
 
