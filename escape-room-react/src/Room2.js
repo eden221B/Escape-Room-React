@@ -11,7 +11,7 @@ const Room2 = () => {
   const [showRoom1, setShowRoom1] = useState(false);
   const [showRoom3, setShowRoom3] = useState(false);
   const [showgame, setshowgame] = useState(false);
-  const [timer, setTimer] = useState(600);
+  const [timer, setTimer] = useState(300);
 
   useEffect(() => {
     const countdown = setTimeout(() => {
