@@ -1,0 +1,23 @@
+#level2 {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/564x/9e/a3/c0/9ea3c06a601803e97241c600e5bb5818.jpg");
+    background-size: cover; 
+    background-position: center;
+    height: 711px;
+}
+#page{
+    height: 500px;
+    width : 700px;
+    position: absolute;
+    left:310px;
+    top:130px;
+    z-index: 10;
+}
+#relic {
+    width: 200px;
+    z-index: 500;
+    position: absolute;
+    left: 560px;
+    top: 180px;
+}
