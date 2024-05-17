@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Room1.css'; 
 import Room4 from './Room4';
 import Room2 from './Room2';
-import Escaped from './Escaped';
+import Level2 from './Level2';
 
 
 const Room1 = () => {
@@ -62,7 +62,7 @@ const Room1 = () => {
                         <Room4 />
                     )
                 ) : (
-                    <Escaped />
+                    <Level2 />
                 )
             ) : (
                 <div id="room1">
